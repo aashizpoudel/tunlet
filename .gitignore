@@ -16,6 +16,7 @@
 !/Cargo.toml
 !/README.md
 !/rust-toolchain.toml
+!/dist-workspace.toml
 
 # Include all files in src and tests
 !/src/**
