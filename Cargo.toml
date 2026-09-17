@@ -1,0 +1,23 @@
+[package]
+name = "tunlet"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "A small authenticated TCP tunnel"
+license = "MIT"
+
+[dependencies]
+getrandom = "0.3"
+hmac = "0.12"
+sha2 = "0.10"
+socket2 = "0.5"
+tokio = { version = "1.44", features = ["rt-multi-thread", "net", "io-util", "sync", "time", "signal", "macros"] }
+tokio-util = { version = "0.7", features = ["rt"] }
+
+[profile.release]
+opt-level = "s"
+lto = "thin"
+codegen-units = 1
+strip = "symbols"
+panic = "abort"
+

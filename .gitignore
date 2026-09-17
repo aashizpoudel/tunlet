@@ -1,0 +1,27 @@
+# Exclude everything by default
+*
+.*
+
+# Allow directories
+!/.github/
+!/.github/workflows/
+!/docs/
+!/examples/
+!/src/
+!/tests/
+
+# Root files
+!/.gitignore
+!/Cargo.lock
+!/Cargo.toml
+!/README.md
+!/rust-toolchain.toml
+
+# Include all files in src and tests
+!/src/**
+!/tests/**
+
+# Other directories and files
+!/docs/protocol.md
+!/examples/**
+!/.github/**
