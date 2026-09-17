@@ -17,6 +17,7 @@
 !/README.md
 !/rust-toolchain.toml
 !/dist-workspace.toml
+!/LICENSE
 
 # Include all files in src and tests
 !/src/**
