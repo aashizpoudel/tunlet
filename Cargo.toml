@@ -5,6 +5,8 @@ edition = "2024"
 rust-version = "1.85"
 description = "A small authenticated TCP tunnel"
 license = "MIT"
+repository = "https://github.com/aashizpoudel/tunlet"
+homepage = "https://github.com/aashizpoudel/tunlet"
 
 [dependencies]
 getrandom = "0.3"
@@ -20,4 +22,9 @@ lto = "thin"
 codegen-units = 1
 strip = "symbols"
 panic = "abort"
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
 
